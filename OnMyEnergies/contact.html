@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - OnMyEnergies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">OnMy<span>Energies</span></a>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="onmycontracts.html">OnMyContracts</a></li>
+      <li><a href="onmyprimecee.html">OnMyPrimeCEE</a></li>
+      <li class="dropdown">
+        <a href="#">S'informer</a>
+        <ul class="dropdown-menu">
+          <li><a href="actualites-cee.html">Actualités CEE</a></li>
+          <li><a href="actualites-energie.html">Marché Électricité & Gaz</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Contactez-nous</h1>
+    <p>Demandez votre étude personnalisée gratuite</p>
+  </div>
+</section>
+
+<section>
+  <h2>Demande d'étude gratuite</h2>
+  <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem;">
+    Remplissez le formulaire ci-dessous et notre équipe vous recontactera dans les plus brefs délais 
+    pour analyser vos besoins et vous proposer une solution sur mesure.
+  </p>
+
+  <form class="contact-form" action="#" method="POST">
+    <div class="form-group">
+      <label for="entreprise">Nom de l'entreprise *</label>
+      <input type="text" id="entreprise" name="entreprise" required placeholder="Votre entreprise">
+    </div>
+
+    <div class="form-group">
+      <label for="nom">Nom et Prénom *</label>
+      <input type="text" id="nom" name="nom" required placeholder="Votre nom complet">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email professionnel *</label>
+      <input type="email" id="email" name="email" required placeholder="contact@entreprise.fr">
+    </div>
+
+    <div class="form-group">
+      <label for="telephone">Téléphone *</label>
+      <input type="tel" id="telephone" name="telephone" required placeholder="06 12 34 56 78">
+    </div>
+
+    <div class="form-group">
+      <label for="service">Service souhaité *</label>
+      <select id="service" name="service" required>
+        <option value="">-- Sélectionnez un service --</option>
+        <option value="courtage">OnMyContracts - Courtage en énergie</option>
+        <option value="cee">OnMyPrimeCEE - Financement travaux</option>
+        <option value="les-deux">Les deux services</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="secteur">Secteur d'activité</label>
+      <input type="text" id="secteur" name="secteur" placeholder="Industrie, Commerce, Services...">
+    </div>
+
+    <div class="form-group">
+      <label for="consommation">Consommation annuelle estimée (MWh)</label>
+      <input type="text" id="consommation" name="consommation" placeholder="Ex: 500 MWh">
+    </div>
+
+    <div class="form-group">
+      <label for="message">Décrivez vos besoins *</label>
+      <textarea id="message" name="message" required placeholder="Expliquez-nous votre projet, vos attentes, vos questions..."></textarea>
+    </div>
+
+    <button type="submit">Envoyer la demande</button>
+
+    <p style="text-align: center; font-size: 0.9rem; color: var(--gris-moyen); margin-top: 1rem;">
+      * Champs obligatoires<br>
+      Vos données sont traitées de manière confidentielle et ne seront jamais partagées.
+    </p>
+  </form>
+</section>
+
+<section class="section-alt">
+  <h2>Nos coordonnées</h2>
+
+  <div style="max-width: 1000px; margin: 0 auto;">
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <h3 style="color: var(--rose-principal); font-size: 2rem; margin-bottom: 0.5rem; font-weight: 700;">OnMyEnergies</h3>
+      <p style="font-size: 1.1rem; color: var(--gris-moyen); line-height: 1.8;">
+        Courtage en énergie et Certificats d'Économies d'Énergie
+      </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem;">
+
+      <!-- Card Photo -->
+      <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 8px 30px rgba(253, 107, 132, 0.15); transition: all 0.4s ease; border: 2px solid transparent; text-align: center;">
+        <div style="width: 150px; height: 150px; background: linear-gradient(135deg, var(--rose-principal), var(--orange-chaud)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 8px 25px rgba(253, 107, 132, 0.3); overflow: hidden; border: 4px solid white;">
+          <img src="nicolas-bouchet.jpg" alt="Nicolas Bouchet" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <h4 style="color: var(--gris-fonce); font-size: 1.4rem; margin-bottom: 0.3rem; font-weight: 700;">Nicolas Bouchet</h4>
+        <p style="color: var(--gris-moyen); font-size: 0.95rem; font-weight: 500;">Votre interlocuteur</p>
+      </div>
+
+      <!-- Card Email -->
+      <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 8px 30px rgba(253, 107, 132, 0.15); transition: all 0.4s ease; border: 2px solid transparent; text-align: center;">
+        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--rose-principal), var(--peche-accent)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 6px 20px rgba(253, 107, 132, 0.3);">
+          <span style="font-size: 2.5rem;">📧</span>
+        </div>
+        <h4 style="color: var(--gris-fonce); font-size: 1.3rem; margin-bottom: 1rem; font-weight: 600;">Email</h4>
+        <a href="mailto:nicolas.bouchet@onmyenergies.fr" style="color: var(--rose-principal); font-weight: 600; text-decoration: none; font-size: 1.05rem; word-break: break-word; transition: all 0.3s ease;">
+          nicolas.bouchet@onmyenergies.fr
+        </a>
+      </div>
+
+      <!-- Card Téléphone -->
+      <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 8px 30px rgba(253, 107, 132, 0.15); transition: all 0.4s ease; border: 2px solid transparent; text-align: center;">
+        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--orange-chaud), var(--peche-accent)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 6px 20px rgba(255, 207, 137, 0.3);">
+          <span style="font-size: 2.5rem;">📞</span>
+        </div>
+        <h4 style="color: var(--gris-fonce); font-size: 1.3rem; margin-bottom: 1rem; font-weight: 600;">Téléphone</h4>
+        <a href="tel:+33646463772" style="color: var(--rose-principal); font-weight: 700; text-decoration: none; font-size: 1.8rem; transition: all 0.3s ease; display: block;">
+          06 46 46 37 72
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 OnMyEnergies - Courtage en énergie et CEE | Tous droits réservés</p>
+</footer>
+
+<style>
+  /* Effet hover sur les cards coordonnées */
+  section.section-alt > div > div > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 50px rgba(253, 107, 132, 0.3) !important;
+    border-color: var(--rose-clair) !important;
+  }
+
+  section.section-alt > div > div > div:hover a {
+    color: var(--orange-chaud);
+    transform: scale(1.05);
+  }
+</style>
+
+</body>
+</html>
